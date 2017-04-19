@@ -66,6 +66,8 @@ body {
   margin-top: -60px;
   padding-left: 10px;
 }
+
+
 #title span {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
@@ -80,3 +82,13 @@ body {
     transform: translateY(-2000px);
   }
 }
+
+#profPic {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  right: 0;
+  height: 300px;
+  width: 250px;
+}
+
