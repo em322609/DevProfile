@@ -69,19 +69,33 @@ body {
 
 #aboutMe {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 30%;
   right: 0;
   color: #FFF;
   text-align: left;
   font-family: 'Droid Sans', sans-serif;
   color: rgb(75, 213, 238);
-  font-weight: 400;
-  font-size: 20px;
+  font-size: 10px;
   letter-spacing: 1px;
   margin-top: -60px;
   padding-left: 10px;
 }
+
+.panel-default{
+    background: transparent;
+}
+.panel-default .panel-heading{
+    background: transparent;
+    color: rgb(75, 213, 238);
+    font-family: 'Droid Sans', sans-serif;
+
+}
+.panel-default .panel-body{
+   background: transparent;
+   font-family: 'Droid Sans', sans-serif;
+}
+
 
 #aboutButton{
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -106,7 +120,7 @@ body {
 #donutchartTwo{
   position: absolute;
   top: 65%;
-  left: 28%;
+  left: 25%;
   right: 0;
   color: #FFF;
   text-align: left;
@@ -122,7 +136,7 @@ body {
 #donutchartThree{
   position: absolute;
   top: 65%;
-  left: 50%;
+  left: 45%;
   right: 0;
   color: #FFF;
   text-align: left;
@@ -138,7 +152,7 @@ body {
 #donutchartFour{
   position: absolute;
   top: 65%;
-  left: 70%;
+  left: 65%;
   right: 0;
   color: #FFF;
   text-align: left;

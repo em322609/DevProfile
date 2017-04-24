@@ -13,23 +13,57 @@
 		<img id="profPic" src="Images/profPic.jpg" class="img-rounded">
 	</div>
 
-	<div id='aboutMe' class="animated bounceIn">
-		<div class="col-md-6">
-		<span>
-			About Me
-		</span>	
+		<div id="aboutMe" class="col-md-6">
 		
-		<button class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#demo" type="button" id="aboutButton">
-			<div class="glyphicon glyphicon-star" />
-		</button>
+			<div class="panel-group" id="accordion">
+    			<div class="panel panel-default">
+        			<div class="panel-heading">
+        				<h4 class="panel-title">
+            				<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+      						About Me
+            				</a>
+        				</h4>
+        			</div>
+        			<div id="collapseOne" class="accordiaon-body collapse">
+        				<div class="panel-body">
+           					As a full stack developer, my primary responsibilities include creating efficient and maintainable full-scale web applications using a variety of .NET technologies and frameworks. My front-end development experience is defined by my work with JavaScript, Angular, and Bootstrap. I also have experience working with many business layer and back-end technologies including ASP.NET MVC, ADO.NET, and Entity Framework. Further experience includes developing REST based Web Services. I have experience working in AGILE development environments.
+						</div>
+   					</div>
+				</div>
+				<div class="panel panel-default">
+        			<div class="panel-heading">
+        				<h4 class="panel-title">
+            				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+      						Education
+            				</a>
+        				</h4>
+        			</div>
+        			<div id="collapseTwo" class="accordiaon-body collapse">
+        				<div class="panel-body">
+           					
+						</div>
+   					</div>
+				</div>
+				<div class="panel panel-default">
+        			<div class="panel-heading">
+        				<h4 class="panel-title">
+            				<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+      						Recent Projects
+            				</a>
+        				</h4>
+        			</div>
+        			<div id="collapseThree" class="accordiaon-body collapse">
+        				<div class="panel-body">
+           				
+						</div>
+   					</div>
+				</div>
 
-		<div id="demo" class="collapse">
-			<div class="animated rollIn">
-			As a full stack developer, my primary responsibilities include creating efficient and maintainable full-scale web applications using a variety of .NET technologies and frameworks. My front-end development experience is defined by my work with JavaScript, Angular, and Bootstrap. I also have experience working with many business layer and back-end technologies including ASP.NET MVC, ADO.NET, and Entity Framework. Further experience includes developing REST based Web Services. I have experience working in AGILE development environments.
+
+
 			</div>
+
 		</div>
-		</div>
-	</div>
 
 
 	<div id="donutchart"></div>
