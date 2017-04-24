@@ -74,7 +74,8 @@ body {
   right: 0;
   color: #FFF;
   text-align: left;
-  font-family: "lato", sans-serif;
+  font-family: 'Droid Sans', sans-serif;
+  color: rgb(75, 213, 238);
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 1px;
@@ -86,6 +87,38 @@ body {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
+#donutchart{
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  right: 0;
+  color: #FFF;
+  text-align: left;
+  font-family: 'Droid Sans', sans-serif;
+  color: rgb(75, 213, 238);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
+#donutchartTwo{
+  position: absolute;
+  top: 65%;
+  left: 28%;
+  right: 0;
+  color: #FFF;
+  text-align: left;
+  font-family: 'Droid Sans', sans-serif;
+  color: rgb(75, 213, 238);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
 #title span {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
@@ -94,7 +127,7 @@ body {
 
 #demo{
   font-family: 'Droid Sans', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
 
 }
 
