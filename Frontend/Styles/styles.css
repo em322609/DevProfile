@@ -119,6 +119,38 @@ body {
   padding-left: 10px;
 }
 
+#donutchartThree{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  right: 0;
+  color: #FFF;
+  text-align: left;
+  font-family: 'Droid Sans', sans-serif;
+  color: rgb(75, 213, 238);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
+#donutchartFour{
+  position: absolute;
+  top: 65%;
+  left: 70%;
+  right: 0;
+  color: #FFF;
+  text-align: left;
+  font-family: 'Droid Sans', sans-serif;
+  color: rgb(75, 213, 238);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
 #title span {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;

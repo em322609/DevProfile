@@ -18,6 +18,9 @@
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
       google.charts.setOnLoadCallback(drawChartTwo);
+      google.charts.setOnLoadCallback(drawChartThree);
+      google.charts.setOnLoadCallback(drawChartFour);
+
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
@@ -32,7 +35,7 @@
         var options = {
           title: 'Front-end Technologies (Industry Experience in Months)',
           pieHole: 0.4,
-          backgroundColor: '#1b2735',
+          backgroundColor: { fill : 'transparent'},
           titleTextStyle: { color: '#FFF'},
           height: 300,
           width: 350,
@@ -56,7 +59,7 @@
         var options = {
           title: 'Programming Languages (Industry Experience in Months)',
           pieHole: 0.4,
-          backgroundColor: '#1b2735',
+          backgroundColor: { fill : 'transparent'},
           titleTextStyle: { color: '#FFF'},
           height: 300,
           width: 350,
@@ -66,6 +69,54 @@
         var chart = new google.visualization.PieChart(document.getElementById('donutchartTwo'));
         chart.draw(data, options);
       }
+
+    function drawChartThree() {
+        var data = google.visualization.arrayToDataTable([
+          ['Business-Layer Technologies', 'Industry Experience (in months)'],
+          ['ASP.NET MVC',     14],
+          ['RESTful Web Services',      8],
+          ['SOAP base Web Services',  6],
+          ['Razor View Engine', 6]
+        ]);
+
+        var options = {
+          title: 'Business-Layer Technologies(Industry Experience in Months)',
+          pieHole: 0.4,
+          backgroundColor: { fill : 'transparent'},
+          titleTextStyle: { color: '#FFF'},
+          height: 300,
+          width: 350,
+          legend: {position: 'bottom', textStyle: {color: 'white', fontSize: 10}}
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchartThree'));
+        chart.draw(data, options);
+      }
+
+      function drawChartFour() {
+        var data = google.visualization.arrayToDataTable([
+          ['Back-End Technologies', 'Industry Experience (in months)'],
+          ['ADO.NET',     14],
+          ['Entity Framework',      12],
+          ['MySQL',  12],
+          ['RDS', 12],
+          ['SQL Server Management Studio', 10]
+        ]);
+
+        var options = {
+          title: 'Back-End Technologies(Industry Experience in Months)',
+          pieHole: 0.4,
+          backgroundColor: { fill : 'transparent'},
+          titleTextStyle: { color: '#FFF'},
+          height: 300,
+          width: 350,
+          legend: {position: 'bottom', textStyle: {color: 'white', fontSize: 10}}
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchartFour'));
+        chart.draw(data, options);
+      }
+
     </script>
 
     </head>
