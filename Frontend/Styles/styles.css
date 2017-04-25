@@ -154,6 +154,7 @@ body {
 .panel-default .panel-body{
    background: transparent;
    font-family: 'Droid Sans', sans-serif;
+   font-size: 12px;
 }
 
 
