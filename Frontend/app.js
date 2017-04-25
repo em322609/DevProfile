@@ -4,14 +4,22 @@ var app = angular.module('DevProfile.Frontend', ['ui.router', 'ngSanitize', 'ui.
     'use strict';
 
     app.config(function ($stateProvider, $urlRouterProvider, $qProvider) {
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/welcome');
         $qProvider.errorOnUnhandledRejections(false);
     
         $stateProvider
         .state('welcome', {
-                url: '/',
-                templateUrl: 'Views/DevWelcome.html',
-                controller: 'associateWelcomeCtrl'
+                url: '/welcome',
+                views: {
+                '': { 
+                    templateUrl: 'Views/DevWelcome.html',
+                    controller: 'associateWelcomeCtrl'
+                    }
+                }
+            })
+        .state('studentReg', {
+            url: '/studentReg',
+            templateUrl: 'Views/studentReg.html',
             });
     });
 
@@ -25,10 +33,10 @@ var app = angular.module('DevProfile.Frontend', ['ui.router', 'ngSanitize', 'ui.
 
         $rootScope.$on('$locationChangeStart', function (event, next, current) {
             // redirect to login page if not logged in and trying to access a restricted page
-            var restrictedPage = $.inArray($location.path(), ['/']) === -1;
+            var restrictedPage = $.inArray($location.path(), ['/welcome']) === -1;
             var loggedIn = $rootScope.globals.currentUser;
             if (restrictedPage && !loggedIn) {
-                $location.path('/');
+                $location.path('/welcome');
             }
         });
     }

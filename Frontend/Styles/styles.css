@@ -82,6 +82,21 @@ body {
   padding-left: 10px;
 }
 
+#studentPortalProj {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  right: 0;
+  color: #FFF;
+  text-align: left;
+  font-family: 'Droid Sans', sans-serif;
+  color: rgb(75, 213, 238);
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
 .panel-default{
     background: transparent;
 }
