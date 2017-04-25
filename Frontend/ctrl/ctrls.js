@@ -4,6 +4,14 @@ app.controller('associateWelcomeCtrl', function ($scope, $state){
 		$state.go('studentReg');
 	}
 
+	$scope.bookingAndRideFinder = function(){
+		$state.go('bookAndRideFind');
+	}
+
+	$scope.examAssessment = function(){
+		$state.go('examAssessment');
+	}
+
 	google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
       google.charts.setOnLoadCallback(drawChartTwo);

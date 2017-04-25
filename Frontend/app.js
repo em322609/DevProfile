@@ -20,6 +20,14 @@ var app = angular.module('DevProfile.Frontend', ['ui.router', 'ngSanitize', 'ui.
         .state('studentReg', {
             url: '/studentReg',
             templateUrl: 'Views/studentReg.html',
+            })
+        .state('examAssessment', {
+            url: '/examAssessment',
+            templateUrl: 'Views/examAssessment.html',
+            })
+        .state('bookAndRideFind', {
+            url: '/bookAndRideFind',
+            templateUrl: 'Views/bookAndRideFind.html',
             });
     });
 
