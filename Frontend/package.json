@@ -5,11 +5,20 @@
   "main": "index.js",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "ng build --aot -prod",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "material-components-web": "^0.9.1"
+    "angular-cli": "1.0.0-beta.22-1",
+    "express": "^4.15.2",
+    "material-components-web": "^0.9.1",
+    "node": "0.0.0"
+  },
+  "engines": {
+    "node": "6.9.2",
+    "npm": "3.10.9"
   }
 }
