@@ -6,8 +6,7 @@ const app = express();
 app.use(express.static(__dirname));
 // Start the app by listening on the default
 // Heroku port
-app.listen(process.env.PORT || 8080);
-
+var port = process.env.PORT || 8080;
 const path = require('path');
 // ...
 // For all GET requests, send back index.html
@@ -17,4 +16,8 @@ app.get('/', function(req, res) {
 
     // make sure index is in the right directory. In this case /app/index.html
     res.render('index');
+});
+
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
 });
